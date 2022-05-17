@@ -1,3 +1,4 @@
+//fibonacci
 let n = 10;
 let fibo_for = 1;
 let fn1 = 0;
@@ -22,3 +23,14 @@ while (count < n) {
 console.log(fibo_while);
 
 console.log(fibo_for === fibo_while)
+
+//primeNumber
+n = 6;
+let prime = true
+for (let k = 2; k * k <= n; k++) {
+    if (n % k == 0) {
+        prime = false;
+        break;
+    }
+}
+console.log(prime)
