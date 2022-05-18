@@ -1,36 +1,16 @@
-//fibonacci
-let n = 10;
-let fibo_for = 1;
-let fn1 = 0;
-let fn2 = 1;
-for (let i = 2; i < n; i++) {
-    fn2 = fn1;
-    fn1 = fibo_for;
-    fibo_for = fn2 + fn1;
+let cmu = {
+    'name': 'chaing mai university',
+    'lat': 18.8046735,
+    'long': 98.9528446,
 }
-console.log(fibo_for);
-
-let fibo_while = 1;
-let count = 2;
-fn1 = 0;
-fn2 = 1;
-while (count < n) {
-    fn2 = fn1;
-    fn1 = fibo_while;
-    fibo_while = fn2 + fn1;
-    count++;
+let maya = {
+    'name': 'maya',
+    'lat': 18.8047037,
+    'long': 98.9440898,
 }
-console.log(fibo_while);
-
-console.log(fibo_for === fibo_while)
-
-//primeNumber
-n = 6;
-let prime = true
-for (let k = 2; k * k <= n; k++) {
-    if (n % k == 0) {
-        prime = false;
-        break;
-    }
+let cenfest = {
+    'name': 'central chaing mai',
+    'lat': 18.8048018,
+    'long': 98.917825,
 }
-console.log(prime)
+console.log(cmu.name + ' ' + maya.name)
