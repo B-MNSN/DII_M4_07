@@ -43,3 +43,23 @@ for (let i = 0; i < employee.length; i++) {
 }
 ageAvg = ageAvg / employee.length;
 console.log(ageAvg);
+
+function findSum(array, key) {
+    sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i][key];
+    }
+    return sum;
+}
+
+function findAvg(array, key) {
+    sum = findSum(array, key);
+    avg = sum / array.length;
+    return avg;
+}
+
+salarySum = findSum(employee, 'salary');
+ageAvg = findAvg(employee, 'age');
+
+console.log(salarySum);
+console.log(ageAvg);
