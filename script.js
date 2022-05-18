@@ -1,17 +1,45 @@
-let place = [3]
-place[0] = {
-    'name': 'chaing mai university',
-    'lat': 18.8046735,
-    'long': 98.9528446,
+let employee = [5]
+employee[0] = {
+    'name': 'นาย ก ',
+    'surname': 'นามสมมติ',
+    'age': 68,
+    'salary': 75900,
 }
-place[1] = {
-    'name': 'maya',
-    'lat': 18.8047037,
-    'long': 98.9440898,
+employee[1] = {
+    'name': 'นางสาว ข',
+    'surname': 'นามสมมติ',
+    'age': 35,
+    'salary': 55400,
 }
-place[2] = {
-    'name': 'central chaing mai',
-    'lat': 18.8048018,
-    'long': 98.917825,
+employee[2] = {
+    'name': 'นาย ค',
+    'surname': 'นามสมมติ',
+    'age': 51,
+    'salary': 81000,
 }
-console.log(place)
+employee[3] = {
+    'name': 'นาง ง ',
+    'surname': 'นามสมมติ',
+    'age': 76,
+    'salary': 111000,
+}
+employee[4] = {
+    'name': 'นางสาว จ',
+    'surname': 'นามสมมติ',
+    'age': 22,
+    'salary': 20500,
+}
+console.log(employee)
+
+let salarySum = 0
+for (let i = 0; i < employee.length; i++) {
+    salarySum += employee[i].salary;
+}
+console.log(salarySum);
+
+let ageAvg = 0;
+for (let i = 0; i < employee.length; i++) {
+    ageAvg += employee[i].age;
+}
+ageAvg = ageAvg / employee.length;
+console.log(ageAvg);
